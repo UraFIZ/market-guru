@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+}
+/******************************************************banner***********************************************************/
+.banner {
+    height: 70px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/******************************************************end banner***********************************************************/
+/*******************************************************logo****************************************************************/  
+.logo-wrapper {
+    display: flex;
+}
+.logo-row {
+    height: 80px;
+    border-bottom: 2px solid #E1E1E1;
+}
+.logo-row {
+    align-items: center;
+}
+.logo-subtitle {
+    text-transform: uppercase;
+    margin: 0;
+}
+.logo-title {
+    margin-bottom: 0px;
+}
+.logo-text-wrapper {
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+}
+.like-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.search-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+/****************************************************end logo****************************************************************/  
+
+/*************************************************sorting-col*************************************************************/
+.sorting-col {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 45px;
+    padding-bottom: 16px;
+}
+.dropdown {
+    background-color: white;
+    border-radius: 18px;
+    border: 1px solid #E2E2E2;
+    min-width: 190px;
+}
+/*************************************************end sorting-col*********************************************************/

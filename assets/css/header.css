@@ -1,0 +1,130 @@
+
+.nav-item:hover .sub-menu {
+    display: block;
+}
+.menu-bar-wrapper {
+   display: inline-flex; 
+   list-style: none;
+   color: #646464;
+   margin-bottom: 0;
+   padding: 0;
+}
+.menu-bar-item {
+    position: relative;
+    max-width: fit-content;
+    padding: 13px 0px;
+    cursor: pointer;
+    margin-right: 31px;
+}
+.menu-bar-item:hover .menu-bar-link {                  
+    text-decoration: none;
+    color: #A81815;
+    font-weight: bold;
+
+}
+.menu-bar-link {
+    color: #646464;
+    transition: all 0.4s ease-in-out;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 270px;
+    color: #646464;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+}
+.menu-bar-item:hover .sub-menu {
+    display: block;
+}
+.sub-menu-item {
+    width: 100%;
+    text-decoration: none;
+   
+}
+.sub-menu-link {
+    color: #646464;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #646464;
+} 
+.sub-menu-link img {
+    object-fit: contain;
+}
+.sub-menu-item:hover .sub-menu-link {
+    text-decoration: none;
+    font-family: Roboto-Bold-Italic;
+    font-size: 14px;
+    color: #A81815;
+}
+.sub-menu-item:hover .sub-menu-link img{
+    color: #A81815;
+}
+
+/*****************************sub-sub-menu*********************************/
+.sub-menu-item {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.sub-sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 270px;
+    min-width: 100px;
+    max-width: 220px;
+    color: #646464;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+    width: fit-content;
+}
+.sub-menu-item:hover .sub-sub-menu {
+    display: block;
+}
+.sub-sub-item {
+    text-decoration: none;
+    width: 100%;
+    border-bottom: 1px solid #646464;
+    padding: 0px 15px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.sub-sub-link {
+    padding: 10px 0px;
+    color: #646464;
+    list-style: none;
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+.sub-sub-item:hover {
+    background-color: #A81815;
+}
+.sub-sub-item:hover .sub-sub-link {
+    text-decoration: none;
+    color: white;
+}
+/************************************end sub sub **************************************/
+.proud-affiliates {
+    display: flex;
+    justify-content: flex-end;
+}
+.proud-affiliates-wrapper {
+    display: flex;
+    align-items: center;
+}
+.proud-affiliates-item:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+
+

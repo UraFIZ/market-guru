@@ -1,0 +1,66 @@
+.main-container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.content-wrapper {
+    max-width: 1210px !important;
+    margin: 0 auto;
+}
+div[class^="col-"]{
+    border: 1px solid black;
+}
+.background-grey {
+    background-color: #F9F9F9;
+}
+.heading-1-rweb {
+    font-family: Raleway-ExtraBold;
+    font-size: 30px;
+    line-height: 30px;
+}
+.heading-1-rwb {
+    font-family: Raleway-Bold;
+    font-size: 30px;
+    line-height: 30px;
+}
+.heading-1-rwb {
+    font-family: Raleway-Bold;
+    font-size: 30px;
+    line-height: 30px;
+}
+.heading-2-rwsb {
+    font-family: Raleway-SemiBold;
+    font-size: 15.6px;
+}
+.heading-2-rwl {
+    font-family: Raleway-Lite;
+    font-size: 16px;
+}
+.heading-3-rr {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 21px;
+}
+.heading-4-rr {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 19px;
+}
+/**********************************************inputs*********************************************************/
+#search {
+    width: 395px;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 16px;
+}
+.search-btn {
+    width: 70px;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #C41415;
+    color: white;
+}
+/********************************************end inputs*********************************************************/
