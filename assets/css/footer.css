@@ -1,0 +1,133 @@
+.footer-above {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+footer .logo-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+footer .logo-text-wrapper {
+    color: white;
+}
+footer .proud-affiliates-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+footer .proud-affiliates-items {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.proud-affiliates-label {
+    margin-bottom: 4px;
+}
+
+
+.footer-quick-links-col {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-quick-links h3 {
+    color: white;
+}
+.links-wrapper {
+    padding: 0;
+}
+.links-wrapper a{
+    color: white;
+}
+.links-wrapper a:hover{
+    color: white;
+}
+.link-item {
+    list-style: none;
+    color: white;
+}
+
+.footer-info-col {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px !important;
+}
+
+.footer-subscription-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-subscription-col .link-item {
+    line-height: 20px;
+}
+/*********************************subscription form *************************************/
+.subscription-form {
+    display: flex;
+    margin-top: 18px;
+}
+.subscription {
+    margin-bottom: 15px;
+}
+.subscript-email {
+    width: 210px;
+    height: 40px;
+    border: 1px solid white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 15px 20px;
+}
+.subsript-btn {
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #C41415;
+}
+.social-wrapper a {
+    color: gray;
+    margin-right: 10px;
+}
+.social-wrapper a:hover {
+    text-decoration: none;
+}
+.social-wrapper .tw:hover {
+    color: white
+}
+.social-wrapper .you:hover {
+    color: red
+}
+.social-wrapper .fb:hover {
+    color: rgb(50, 149, 206)
+}
+.footer-below {
+    border-top: 1px solid #707070;
+    padding: 15px 0;
+}
+
+@media (max-width: 991px) {
+    .footer-above {
+        padding-bottom: 40px;
+    }
+.footer-quick-links-col, .footer-info-col {
+    display: flex;
+    justify-content: center;
+}
+.footer-info-col {
+    padding-right: 15px !important;
+}
+footer .logo-wrapper {
+    justify-content: center;
+}
+}
+@media (max-width: 768px) {
+    .footer-subscription-col {
+        justify-content: center;
+    text-align: center;
+    }
+    .subscription {
+        display: flex;
+        justify-content: center;
+    }
+}

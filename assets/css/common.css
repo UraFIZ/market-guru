@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 .content-wrapper {
-    max-width: 1210px !important;
+    max-width: 1170px !important;
     margin: 0 auto;
 }
 div[class^="col-"]{
@@ -11,6 +11,22 @@ div[class^="col-"]{
 }
 .background-grey {
     background-color: #F9F9F9;
+}
+.background-light-dark {
+    background-color: #232323;
+}
+.background-dark {
+    background-color: #1A1A1A;
+}
+.heading-1-rblack {
+    font-family: Raleway-Black;
+    font-size: 46px;
+    line-height: 54px;
+}
+.heading-2-rblack {
+    font-family: Raleway-Black;
+    font-size: 24px;
+    line-height: 32px;
 }
 .heading-1-rweb {
     font-family: Raleway-ExtraBold;
@@ -27,13 +43,39 @@ div[class^="col-"]{
     font-size: 30px;
     line-height: 30px;
 }
+.heading-2-rwb {
+    font-family: Raleway-Bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+.heading-3-rwb {
+    font-family: Raleway-Bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.heading-4-rwb {
+    font-family: Raleway-Bold;
+    font-size: 16px;
+    line-height: 19px;
+}
 .heading-2-rwsb {
     font-family: Raleway-SemiBold;
     font-size: 15.6px;
 }
+
 .heading-2-rwl {
     font-family: Raleway-Lite;
     font-size: 16px;
+}
+.heading-2-rb {
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.heading-3-rb {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 21px;
 }
 .heading-3-rr {
     font-family: Roboto-Regular;
@@ -44,6 +86,28 @@ div[class^="col-"]{
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 19px;
+}
+.heading-5-rr {
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 18px;
+}
+.heading-6-rr {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    line-height: 16px;
+}
+.heading-2-rl {
+    font-family: Roboto-light;
+    font-size: 13px;
+    line-height: 18px;
+}
+.heading-3-rl {
+    font-family: Roboto-light;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    margin: 0;
 }
 /**********************************************inputs*********************************************************/
 #search {
