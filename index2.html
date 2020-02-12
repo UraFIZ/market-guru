@@ -20,7 +20,7 @@
     <section class="main-container background-grey">
         <div class="content-wrapper container">
             <div class="row logo-row">
-                <div class="col-5">
+                <div class="col-5 col-md-5 col-lg-5 logo-col">
                     <div class="logo-wrapper">
                         <img src="./assets/img/web_logo.png" alt="logo">
                         <div class="logo-text-wrapper">
@@ -29,13 +29,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 p-0">
+                <div class="col-5 col-md-6 col-lg-5 p-0 search-col">
                     <form class="search-wrapper" action="#">
                         <input type="search" name="search" id="search" placeholder="search">
                         <button class="search-btn" type="submit"> <img src="./assets/icons/search.png" alt="search"></button>
                     </form>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-md-1 col-lg-2">
                     <div class="like-wrapper">
                         <img src="./assets/icons/like.png" alt="">
                     </div>
@@ -44,13 +44,13 @@
 
         </div>
     </section>
-    <section class="main-container background-grey">
+    <section class="main-container background-grey menu-container">
         <div class="container content-wrapper">
             <div class="row nav-row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-lg-6 order-md-0 order-1  menu-wrapper">
                     <nav class="menu-bar-container">
                       <ul class="menu-bar-wrapper">
-                          <li class="menu-bar-item"><span class="menu-bar-link heading-3-rr">Categories</span></a>
+                          <li class="d-none d-sm-block menu-bar-item"><span class="menu-bar-link heading-3-rr">Categories</span></a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#" class="sub-menu-link heading-4-rr">Baby Shoes<i class="fas fa-angle-right"></i></a></li>
                                 <li class="sub-menu-item"><a href="#" class="sub-menu-link heading-4-rr">Nursery Bedding<i class="fas fa-angle-right"></i></a>
@@ -75,7 +75,7 @@
                       </ul>
                     </nav>
                 </div>
-                <div class="col-12 col-md-6 proud-affiliates">
+                <div class="col-12 col-md-6 col-lg-6 order-md-1 order-0 proud-affiliates">
                     <div class="proud-affiliates-wrapper">
                         <div class="heading-3-rr mr-3">Proud affiliates of</div>
                         <div class="proud-affiliates-item"><img src="./assets/icons/Amazon_logo.png" alt="amazon"></div>
@@ -88,16 +88,37 @@
     </section>
     <section class="main-container background-grey">
         <div class="container content-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Categories </a></li>
+                          <li class="breadcrumb-item active" aria-current="page"> Baby shoes</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container background-grey">
+        <div class="container content-wrapper">
             <div class="row sorting-row">
-                <div class="col-12 sorting-col">
+                <div class="col-12 col-sm-6 goods-title-wrapper">
+                    <h2 class="heading-2-rwb goods-title">Baby Shoes</h2>
+                </div>
+                <div class="col-6 d-show d-sm-none">
+                    <div>Categories</div>
+                </div>
+                <div class="col-6 col-sm-6 sorting-col">
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Sort by:
+                        <button class="btn dropdown-toggle heading-5-rr" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Sort by:
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">price low to high</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item heading-5-rb" href="#">price low to high</a>
+                          <a class="dropdown-item heading-5-rb" href="#">Another action</a>
+                          <a class="dropdown-item heading-5-rb" href="#">Something else here</a>
                         </div>
                       </div>
                 </div>
@@ -106,25 +127,170 @@
     </section>
     <section class="main-container background-grey">
         <div class="container content-wrapper detail-content-wrapper">
-            <aside class="filtering-menu-container">
-                <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <div class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img src="./assets/icons/sort-down.png" alt=""> <h3 class="heading-3-rb">Related Categories</h3>
+            <aside class="aside-menu-container">
+                <section class="filtering-menu-container">
+                    <div id="related-categories-accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                              <div class="btn btn-link" data-toggle="collapse" data-target="#related-categories" aria-expanded="true" aria-controls="related-categories">
+                                <img class="card-img" src="./assets/icons/sort-down.png" alt=""> <h3 class="heading-3-rb accordion-title">Related Categories</h3>
+                              </div>
                           </div>
-                        </h5>
-                      </div>
-                  
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      
+                          <div id="related-categories" class="collapse show" aria-labelledby="headingOne" data-parent="#related-categories-accordion">
+                            <div class="card-body">
+                             <nav class="related-categories-nav">
+                                 <ul>
+                                     <li><a class="heading-5-rr" href="#">Nursery Bedding</a></li>
+                                     <li>
+                                        <ul>
+                                            <li><a class="heading-5-rr" href="#">Blankets & Throws</a></li>
+                                            <li>
+                                                <ul>
+                                                    <li><a class="heading-5-rr" href="#">Sleeping Bags & Sleepsacks</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="heading-5-rr" href="#">Sheets & Sets</a></li>
+                                            <li><a class="heading-5-rr" href="#">Bumpers</a></li>
+                                            <li><a class="heading-5-rr" href="#">Bed Pillows</a></li>
+                                        </ul>
+                                     </li>
+                                 </ul>
+                             </nav>
+                            </div>
+                          </div>
                         </div>
-                      </div>
                     </div>
-                </div>
+                    <div id="source-accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="btn btn-link" data-toggle="collapse" data-target="#source-links" aria-expanded="true" aria-controls="source-links">
+                                    <img class="card-img" src="./assets/icons/sort-down.png" alt=""> <h3 class="heading-3-rb accordion-title">Source</h3>
+                                </div>
+                            </div>
+                            <div id="source-links" class="collapse show" aria-labelledby="headingTwo" data-parent="#source-accordion">
+                                    <div class="card-body">
+                                        <ul class="source-links-wrapper">
+                                            <li class="heading-5-rr source-link active"><a href="#">All</a></li>
+                                            <li class="heading-5-rr source-link"><a href="#">Aliexpress</a></li>
+                                            <li class="heading-5-rr source-link"><a href="#">Amazon</a></li>
+                                            <li class="heading-5-rr source-link"><a href="#">Ebay</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tag-accordion">
+                        <div class="card">
+                            <div class="card-header"  id="headingThree">
+                                <div class="btn btn-link" data-toggle="collapse" data-target="#tag-checkboxes" aria-expanded="true" aria-controls="tag-checkboxes">
+                                    <img class="card-img" src="./assets/icons/sort-down.png" alt=""> <h3 class="heading-3-rb accordion-title">Tag</h3>
+                                </div>
+                            </div>
+                            <div id="tag-checkboxes" class="collapse show" aria-labelledby="headingThree" data-parent="#tag-accordion">
+                                <div class="card-body">
+                                    <form class="tag-form" action="#">
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="price-trend" id="price-trend">
+                                            <label class="label heading-5-rr" for="price-trend">Price trend</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="score-checkbox" id="score-checkbox">
+                                            <label class="label heading-5-rr" for="score-checkbox">Score</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="new-checkbox" id="new-checkbox">
+                                            <label class="label heading-5-rr" for="new-checkbox">New</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="seller-checkbox" id="seller-checkbox">
+                                            <label class="label heading-5-rr" for="seller-checkbox">Seller</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="sold-checkbox" id="sold-checkbox">
+                                            <label class="label heading-5-rr" for="sold-checkbox">Items Sold</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="free-shipping">
+                        <div class="checkbox-wrapper">
+                            <form action="#">
+                                <input class="checkbox" type="checkbox" name="shipping" id="shipping">
+                                <label class="label heading-5-rr" for="shipping">Show only free shipping</label>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="browse-brand-menu-container">
+                    <div id="browse-brand-accordion">
+                        <div class="card">
+                            <div class="card-header"  id="headingFour">
+                                <div class="btn btn-link" data-toggle="collapse" data-target="#browse-brand-checkboxes" aria-expanded="true" aria-controls="browse-brand-checkboxes">
+                                    <div class="card-img browse-brand-img"></div> <h3 class="heading-3-rb accordion-title">Browse by Brand</h3>
+                                </div>
+                            </div>
+                            <div id="browse-brand-checkboxes" class="collapse show" aria-labelledby="headingFour" data-parent="#browse-brand-accordion">
+                                <div class="card-body">
+                                    <form class="browse-brand-form" action="#">
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="brand1" id="brand1">
+                                            <label class="label heading-5-rr" for="brand1">Carter’s</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="brand2" id="brand2">
+                                            <label class="label heading-5-rr" for="brand2">The First Years</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="brand3" id="brand3">
+                                            <label class="label heading-5-rr" for="brand3">Nuby</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="brand4" id="brand4">
+                                            <label class="label heading-5-rr" for="brand4">Puma</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="brand5" id="brand5">
+                                            <label class="label heading-5-rr" for="brand5">Nike</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="Sassy" id="Sassy">
+                                            <label class="label heading-5-rr" for="Sassy">Sassy</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="Bright" id="Bright">
+                                            <label class="label heading-5-rr" for="Bright">Bright Starts</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="WolVol" id="WolVol">
+                                            <label class="label heading-5-rr" for="WolVol">WolVol</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="Meckior" id="Meckior">
+                                            <label class="label heading-5-rr" for="Meckior">Meckior</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="Delebao" id="Delebao">
+                                            <label class="label heading-5-rr" for="Delebao">Delebao</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="Voberry" id="Voberry">
+                                            <label class="label heading-5-rr" for="Voberry">Voberry</label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <input class="checkbox" type="checkbox" name="BirdRock" id="BirdRock">
+                                            <label class="label heading-5-rr" for="BirdRock">BirdRock Baby</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </aside>
+
             <div class="row card-detail-row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
                     <div class="featured-card">
@@ -462,6 +628,52 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container background-grey2 most-search-keywords">
+        <div class="container content-wrapper">
+            <div class="row most-search-keywords-title">
+                <div class="col-12">
+                    <h2 class="heading-4-rwb">Most Search Keywords</h2>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="col most-search-keywords-items">
+                    <li class="most-search-keywords-item "><a class="heading-5-rr" href="#">Appleo Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Acero Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Samsing Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Lenov Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Sonyo Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Delli Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Asuso Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">HPO Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Sonyo Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Delli Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Asuso Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">HPO Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">HPO Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Sonyo Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Delli Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Asuso Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">HPO Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">HPO Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Sonyo Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Delli Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Asuso Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#">Toshibao Laptop</a></li>
+                    <li class="most-search-keywords-item"><a class="heading-5-rr" href="#"> LGG Laptop</a></li>
+                </ul>
             </div>
         </div>
     </section>

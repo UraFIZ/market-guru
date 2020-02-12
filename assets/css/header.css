@@ -9,12 +9,14 @@
    margin-bottom: 0;
    padding: 0;
 }
+.menu-bar-item:not(:last-child) {
+    margin-right: 31px;
+}
 .menu-bar-item {
     position: relative;
     max-width: fit-content;
-    padding: 13px 0px;
+    padding: 8px 0px;
     cursor: pointer;
-    margin-right: 31px;
 }
 .menu-bar-item:hover .menu-bar-link {                  
     text-decoration: none;
@@ -29,7 +31,7 @@
 .sub-menu {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 0;
     width: 270px;
     color: #646464;
@@ -130,5 +132,57 @@
     margin-right: 15px;
 }
 
+/*************************************************responsiveness*************************************************/
+@media (max-width: 768px) {
+    .menu-bar-item:not(:last-child) {
+        margin-right: 16px;
+    }
+    .menu-bar-item .heading-3-rr {
+        font-size: 14px;
+    }
+    .proud-affiliates-wrapper .heading-3-rr {
+        font-size: 14px;
+    }
+    .proud-affiliates-item:not(:last-of-type) {
+        margin-right: 11px;
+    }
+}
 
+@media (max-width: 600px) {
+    .logo-text-wrapper h1 {
+        font-size: 26px;
+    }
+    .logo-text-wrapper h2 {
+        font-size: 13.6px;
+    }
+    .proud-affiliates {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .menu-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .proud-affiliates-item img {
+        width: 70%;
+    }
+    .proud-affiliates-item:not(:last-of-type) {
+        margin-right: 0px;
+    }
+    .proud-affiliates-wrapper .heading-3-rr {
+        font-size: 12px;
+    }
+    #search {
+        display: none;
+    }
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50% !important;
+    }
 
+}
+@media (max-width: 500px) {
+
+}

@@ -56,14 +56,26 @@ h1 {
 .sorting-col {
     display: flex;
     justify-content: flex-end;
-    padding-top: 45px;
+    padding-top: 12px;
     padding-bottom: 16px;
 }
 .dropdown {
     background-color: white;
     border-radius: 18px;
     border: 1px solid #E2E2E2;
-    min-width: 190px;
+    max-width: 190px;
+}
+.goods-title {
+    color: #646464;
+}
+.sorting-row .goods-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+#dropdownMenuButton {
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 18px;
 }
 /*************************************************end sorting-col*********************************************************/
 
@@ -190,7 +202,7 @@ h1 {
 /************************************************************end how-it-works*******************************************************/
 /*******************************************************************featured-tabs-wrapper**********************************************/
 .featured-products {
-    padding: 40px 0 0 0;
+    padding: 40px 0 90px 0;
 }
 .featured-products-title {
     margin-bottom: 30px;
@@ -261,7 +273,7 @@ h1 {
     border-bottom-right-radius: 31px;
     color: white;
     padding-right: 4px;
-    z-index: 10;
+    z-index: 5;
 }
                                          /****************featured-rating***********************/
 .featured-img-wrapped .featured-chip.featured-rating {
@@ -404,9 +416,13 @@ background-position: center;
 .most-search-keywords {
     padding-top: 30px;
     padding-bottom: 15px;
+    border-top: 1px solid rgb(221, 217, 217, 0.4);
 }
 .most-search-keywords-title {
     margin-bottom: 15px;
+}
+.most-search-keywords-title h2{
+    color: #646464;
 }
 .most-search-keywords-items {
     display: flex;
@@ -448,16 +464,27 @@ footer .proud-affiliates-wrapper {
 /*****************************************************************************page2***************************************************************/
 .detail-content-wrapper {
     display: flex;
+    padding-bottom: 90px;
 }
-.filtering-menu-container {
+.aside-menu-container {
     flex: 0 0 240px;
     margin-right: 40px;
     margin-left: -15px;
-    border: 1px solid black;
+    padding-left: 15px;
 }
+.filtering-menu-container {
+    box-shadow: 0px 0px 12px -2px #53575a9e;
+    height: max-content;
+    margin-bottom: 17px;
+}
+.browse-brand-menu-container {
+    box-shadow: 0px 0px 12px -2px #53575a9e;
+    height: max-content;
+}
+
 .card-detail-row {
     max-width: 100%;
-    border: 1px solid black;
+    height: 100%;
 }
 .btn-link {
     width: 100%;
@@ -466,10 +493,143 @@ footer .proud-affiliates-wrapper {
     align-items: baseline;
     color: #303030 !important;
 }
+/*******************************************************************************card******************************************************************/
+.card-detail-row > * {
+    background-color: white;;
+}
+/******************************************************************************end card*****************************************************************/
+                                     /**********************************related-categories accordion*********************************************/
+.filtering-menu-container .card-header, .browse-brand-menu-container .card-header {
+    background-color: white;
+    padding: 8px 10px;
+}
+.filtering-menu-container .btn-link, .browse-brand-menu-container .btn-link {
+    display: flex !important;
+    justify-content: flex-start;
+}
+.filtering-menu-container  .card-img, .browse-brand-menu-container .card-img {
+    margin-right: 16px;
+    height: 13px;
+    width: 13px;
+    object-fit: contain;
+}
+.browse-brand-img {
+    background-color: black;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+.related-categories-nav ul{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+.related-categories-nav a {
+    color: #646464;
+}
+.related-categories-nav a:hover {
+    color: #646464;
+}
+.accordion-title {
+    margin: 0 !important;
+}
+                                          /*************************************end related-categories**********************************/
+                                         /**************************************source-links*********************************************/
+.filtering-menu-container .card-body, .browse-brand-menu-container .card-body {
+    background-color: white;
+}
+.source-links-wrapper {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.source-link:not(:last-child) {
+    margin-bottom: 8px;
+}
+.source-link a {
+    color: #646464;
+    padding: 7px 7px;
+}
+.source-link a:hover {
+    color: #646464;
+}
+.source-link .active > a:hover {
+    color: #C41415;
+}
+.source-link.active > a {
+    color: #C41415;
+}
+                                         /**************************************end source-links******************************************/
+                                         /**************************************Tag-accordion******************************************/
+.filtering-menu-container .checkbox, .browse-brand-menu-container .checkbox {
+	position: absolute;
+	left: -9999px;
+}
+
+.label {
+	cursor: pointer;
+    position: relative;
+    margin-left: 25px;
+    color: #646464;
+}
+
+.label:before {
+	content: '';
+	background-color: #fff;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	left: -23px;
+	width: 15px;
+	height: 15px;
+}
+
+.label:after {
+	color: white;
+    content: '\2713';
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+    left: -24px;
+    top: 0px;
+	/* transform: scale(0); */
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AD160F;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+                                         /**************************************end Tag-accordion******************************************/
+                                         /*********************************************free-shipping***************************************/
+.free-shipping {
+    padding: 20px;
+    background-color: #fff;
+}
+                                         /******************************************end free-shipping***************************************/
+                                         /********************************************browse-brand-accordion********************************/
+
+                                         /*****************************************end browse-brand-accordion********************************/
+
 /*****************************************************************************end page2***************************************************************/
 /************************************************************************end most-search-keywords************************************************/
 
 
+
+/*****************************************************||||responsiveness|||||************************************************************/
 
 
 @media (max-width:768px) {

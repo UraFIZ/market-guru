@@ -6,11 +6,19 @@
     max-width: 1170px !important;
     margin: 0 auto;
 }
-div[class^="col-"]{
+/* div[class^="col-"]{
     border: 1px solid black;
+} */
+.menu-container {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(155, 149, 149, 0.315);
+
 }
 .background-grey {
     background-color: #F9F9F9;
+}
+.background-grey2 {
+    background-color: #F6F6F6;
 }
 .background-light-dark {
     background-color: #232323;
@@ -76,6 +84,7 @@ div[class^="col-"]{
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 21px;
+    color: black;
 }
 .heading-3-rr {
     font-family: Roboto-Regular;
@@ -89,6 +98,11 @@ div[class^="col-"]{
 }
 .heading-5-rr {
     font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 18px;
+}
+.heading-5-rb {
+    font-family: Roboto-Bold;
     font-size: 13px;
     line-height: 18px;
 }
@@ -117,9 +131,11 @@ div[class^="col-"]{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 10px 16px;
+    transition: width 0.9s ease-in;
 }
 .search-btn {
     width: 70px;
+    max-width: 70px;
     height: 40px;
     border: 1px solid #E1E1E1;
     border-top-right-radius: 20px;
@@ -128,3 +144,36 @@ div[class^="col-"]{
     color: white;
 }
 /********************************************end inputs*********************************************************/
+
+/******************************************bred-crumb-section*******************************/
+/* .bred-crumb-section {
+    margin-bottom: 15px;
+} */
+.breadcrumb {
+    background-color: #F9F9F9 !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+.breadcrumb-item a {
+    font-size: 12px !important;
+    text-transform: capitalize;
+    color: #979797;
+}
+.breadcrumb-item {
+    font-size: 12px !important;
+    color: #979797;
+}
+.bred-crumb-section {
+    padding: 27px 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+}
+/******************x***********************end bred-crumb-section*************x*****************/
+
+@media (max-width: 768px) {
+    #search {
+        width: 180px;
+    }
+}
