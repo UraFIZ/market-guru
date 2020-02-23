@@ -5,18 +5,15 @@ $(document).ready(function(){
     }else if($(window).width() < 599) {
         getShowSeachInput()
     }
-
+    // getInitiationOwlCarousalForLocationSection()
 })
 
-function getNewTab(btnClass, containerClass, cardClass, func) {
+function getNewTab(btnClass, containerClass, cardClass) {
     $(btnClass).on('click', function () {
         var btnsIndex = $(this).index()
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest(containerClass).find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
-        if (func) {
-            func();
-        }
     });
 }
 
@@ -46,4 +43,22 @@ function getShowSeachInput() {
         $(".search-col").removeClass("col-10");
         $(".logo-col").show();
     })
+}
+function getInitiationOwlCarousalForLocationSection() {
+    if($(window).width() <= 600) {
+        $(".featured-tabs-wrapper").addClass("owl-carousel");
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            autoplay: false,
+            nav:false,
+            dots: false,
+            margin: -10,
+            rewind:true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+            }
+        })
+    }
 }
