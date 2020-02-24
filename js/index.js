@@ -55,17 +55,19 @@ function getInitiationOwlCarousalInOneLine(id) {
         nav: false,
         dots: true,
         center: false,
-        margin: 20,
+        margin: 0,
         rewind: false,
         responsive: {
             1024: {
                 items: 2
             },
             768: {
-                items: 2
+                items: 2,
+                margin: 10
             },
             600: {
-                items: 1
+                items: 2,
+                margin: 10
             },
             500: {
                 items: 1,

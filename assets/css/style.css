@@ -217,7 +217,7 @@ h1 {
 }
 .how-it-works-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 103px;
@@ -670,25 +670,67 @@ footer .proud-affiliates-wrapper {
 
 
 /*****************************************************||||responsiveness|||||************************************************************/
-
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .how-it-works-card {
-        box-shadow: 7px 7px 10px -5px grey;
+        box-shadow: 3px 10px 19px -5px grey;
+        /* padding: 15px 40px; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .how-it-works-text-wrapper {
+        width: 60%;
+    }
+    #how-it-works-row .owl-stage {
+        margin-left: 15px;
     }
    #how-it-works-row .owl-item {
        height: 130px;
    }
+   #how-it-works-row .owl-dots {
+    display: flex;
+    justify-content: center;
+    /* width: 40px; */
+   }
+}
+@media (max-width:1024px) {
+    .how-it-works-card {
+        width: 95%;
+    }
+   #how-it-works-row button.owl-dot {
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-left: 13px;
+   }
+   #how-it-works-row button.owl-dot.active {
+       background-color: #E2E2E2;
+   }
 }
 @media (max-width:768px) {
-    .how-it-works-card {
-        justify-content: flex-start;
-    }
     .slider-cards-wrapper {
         display: none;
+    }
+    .how-it-works-card {
+        margin-bottom: 0;
+    }
+    .how-it-works-text-wrapper {
+        width: 100%;
+        padding-left: 77px;
+    }
+    .how-it-works-text-wrapper img {
+        left: -10%;
+        top: -18px;
     }
 }
 
 @media (max-width:576px) {
+    .how-it-works-text-wrapper {
+        width: 67%;
+    }
     .featured-tabs-wrapper {
         overflow-x: scroll;
     }
@@ -700,9 +742,35 @@ footer .proud-affiliates-wrapper {
         margin: 15px auto;
     }
 }
+@media (max-width:460px) {
+    .how-it-works-text-wrapper {
+        width: 79%;
+        padding-left: 68px;
+    }
+
+}
 @media (max-width:440px) {
     .featured-card {
         max-width: 100%;
         margin: 15px auto;
+    }
+    .how-it-works-text-wrapper {
+        width: 82%;
+        padding-left: 80px;
+    }
+}
+@media (max-width:400px) {
+    .how-it-works-text-wrapper {
+        width: 95%;
+    }
+}
+@media (max-width:360px) {
+    .how-it-works-text-wrapper {
+        width: 100%;
+        padding-left: 60px;
+    }
+    .how-it-works-text-wrapper img {
+        left: -15%;
+        top: -8px;
     }
 }
