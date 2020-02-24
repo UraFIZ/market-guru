@@ -5,7 +5,10 @@ $(document).ready(function(){
     }else if($(window).width() < 599) {
         getShowSeachInput()
     }
-    // getInitiationOwlCarousalForLocationSection()
+    if($(document).width() <= 1024) {
+        getInitiationOwlCarousalInOneLine("#how-it-works-row")
+    }
+   
 })
 
 function getNewTab(btnClass, containerClass, cardClass) {
@@ -44,21 +47,35 @@ function getShowSeachInput() {
         $(".logo-col").show();
     })
 }
-function getInitiationOwlCarousalForLocationSection() {
-    if($(window).width() <= 600) {
-        $(".featured-tabs-wrapper").addClass("owl-carousel");
-        $('.owl-carousel').owlCarousel({
-            loop: false,
-            autoplay: false,
-            nav:false,
-            dots: false,
-            margin: -10,
-            rewind:true,
-            responsive: {
-                0: {
-                    items: 3
-                },
+function getInitiationOwlCarousalInOneLine(id) {
+    $(id).addClass("owl-carousel");
+    $(id).owlCarousel({
+        loop: false,
+        autoplay: false,
+        nav: false,
+        dots: true,
+        center: false,
+        margin: 20,
+        rewind: false,
+        responsive: {
+            1024: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            600: {
+                items: 1
+            },
+            500: {
+                items: 1,
+            },
+            400: {
+                items: 1,
+            },
+            300: {
+                items: 1,
             }
-        })
-    }
+        }
+    })
 }
