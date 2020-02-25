@@ -19,11 +19,15 @@
 .proud-affiliates-wrapper {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .proud-affiliates-item:not(:last-of-type) {
     margin-right: 15px;
 }
-
+.nav-row {
+    align-items: center;
+    justify-content: flex-end;
+}
 .nav-list {
     display: flex;
     position: relative;
@@ -47,6 +51,9 @@
     background-color: #A81815;
     font-size: 16px;
     color: white;
+}
+.first-level {
+    border-bottom: none !important;
 }
 .sub-menu {
     display: block;
@@ -151,14 +158,12 @@
     .proud-affiliates-wrapper .heading-3-rr {
         font-size: 12px;
     }
-    #search {
-        display: none;
-    }
-    .search-btn {
+
+    /* .search-btn {
         width: 40px;
         height: 40px;
         border-radius: 50% !important;
-    }
+    } */
 
 }
 @media (max-width: 500px) {

@@ -1,14 +1,14 @@
 $(document).ready(function(){
     getNewTab(".featured-tab",".featured-products .content-wrapper", ".featured-card-row")
     if( $(window).width() <= 768 && $(window).width() >= 600) {
-        getExtendSearchInput();
+        getExtendSearchInputForTab();
     }else if($(window).width() < 599) {
-        getShowSeachInput()
+        getShowSearchInput();
+        getInitiationOwlCarousalNotResp("#respKeyCarousal");
     }
     if($(document).width() <= 1024) {
         getInitiationOwlCarousalInOneLine("#how-it-works-row")
     }
-   
 })
 
 function getNewTab(btnClass, containerClass, cardClass) {
@@ -20,31 +20,42 @@ function getNewTab(btnClass, containerClass, cardClass) {
     });
 }
 
-function getExtendSearchInput() {
+function getExtendSearchInputForTab() {
+    $(".search-wrapper").addClass("tab");
+    $("#search").addClass("tab-init");
     $("#search").on("click", function(){
-        $(this).animate({
-            "width": "300px"}, 100);
+       $(this).removeClass( "tab-init" ).addClass( "tab-full")
     })
     $("#search").on("mouseleave", function(){
-        $(this).animate({
-            "width": "180px"}, 100);
+        $(this).removeClass( "tab-full" ).addClass( "tab-init")
     })
    }
 
-function getShowSeachInput() {
-    $(".search-btn").on("click", function(){
-        var logoColumn = $(".logo-col");
-        $(logoColumn).hide();
-        $(".search-col").addClass("col-10");
-        $("#search").animate({
-            "width": "80%"
-        }, 100)
-        $("#search").show();
+function getShowSearchInput() {
+    $(".search-wrapper").css("width", "110px")
+    $("#search").addClass("responsive");
+    $(".search-btn-wrapper").addClass("responsive");
+    $(".search-btn").click(function(e){
+        if($("#search").val() !== "") {
+            $(".search-wrapper").submit();
+        }
+        e.preventDefault();
+        $(".search-wrapper").css("width", "280px");
+        $(".col-md-6").removeClass("col-6").addClass("col-11");
+        $(".logo-wrapper").parent().hide();
+        $("#search").addClass( "active");
+        
     })
-    $(".search-btn").on("mouseleave", function(e){
-        $("#search").hide();
-        $(".search-col").removeClass("col-10");
-        $(".logo-col").show();
+    $("#search").on("mouseleave", function(){
+        if($("#search").val() == "") {
+            $("#search").removeClass( "active");
+            setTimeout(function(){
+                $(".col-md-6").removeClass("col-11").addClass("col-6");
+                $(".search-wrapper").css("width", "110px");
+                $(".logo-wrapper").parent().show();
+            }, 500)
+
+        }
     })
 }
 function getInitiationOwlCarousalInOneLine(id) {
@@ -79,5 +90,18 @@ function getInitiationOwlCarousalInOneLine(id) {
                 items: 1,
             }
         }
+    })
+}
+function getInitiationOwlCarousalNotResp(id) {
+    $(id).addClass("owl-carousel");
+    $(id).owlCarousel({
+        loop: false,
+        autoplay: false,
+        nav: true,
+        dots: false,
+        center: false,
+        margin: 0,
+        rewind: false,
+        items: 4
     })
 }

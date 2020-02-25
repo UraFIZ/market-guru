@@ -130,4 +130,7 @@ footer .logo-wrapper {
         display: flex;
         justify-content: center;
     }
+    .subscript-email {
+        width: auto;
+    }
 }

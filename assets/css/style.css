@@ -67,9 +67,99 @@ h1 {
     justify-content: flex-end;
 }
 .search-wrapper {
+    position: relative;
     display: flex;
     justify-content: flex-end;
+    width: 395px;
 }
+.search-wrapper.tab {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 380px;
+}
+#search {
+    width: 395px;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 16px;
+    transition: width 0.9s ease-in;
+    outline: none;
+}
+#search:focus {
+    border-color: #0093D1;
+}
+#search.tab-full {
+    width: 290px;
+}
+#search.tab-init {
+    width: 140px;
+}
+#search.responsive {
+    width: 0;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
+    border-radius: 20px;
+    padding: 10px 16px;
+    transition: all 0.8s ease;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgb(201, 195, 195);
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(201, 195, 195);
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgb(201, 195, 195);
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: rgb(201, 195, 195);
+  }
+  .search-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    max-width: 70px;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #C41415;
+    color: white;
+  }
+  .search-btn-wrapper.responsive {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    max-width: 70px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #E1E1E1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #C41415;
+    color: white;
+  }
+  #search.active {
+      width: 290px;
+  }
+  .search-center {
+      display: flex;
+      justify-content: center;
+  }
 /****************************************************end logo****************************************************************/  
 
 /*************************************************sorting-col*************************************************************/
@@ -132,6 +222,7 @@ h1 {
 .banner-subtitle {
     color: white;
 }
+
 /*******************************slider-card***************************/
 .slider-cards-wrapper {
     display: flex;
@@ -191,6 +282,11 @@ h1 {
     align-items: center;
     border-radius: 16px;
     box-shadow: 1px 2px 3px rgb(175, 168, 168);
+}
+.slider-img {
+    width: 23px;
+    height: 21px;
+    object-fit: contain;
 }
 /*******************************************************end banner-section******************************************************/
 /************************************************************how-it-works*******************************************************/
@@ -738,6 +834,9 @@ footer .proud-affiliates-wrapper {
 }
 @media (max-width:768px) {
     .slider-cards-wrapper {
+        /* display: none; */
+    }
+    .banner-arrow {
         display: none;
     }
     .how-it-works-card {
@@ -751,6 +850,40 @@ footer .proud-affiliates-wrapper {
         left: -10%;
         top: -18px;
     }
+    /**********************banner section************************/
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .banner-text-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .banner-text-wrapper .banner-title {
+        line-height: 22px;
+        font-size: 22px;
+        text-transform: capitalize;
+        font-family: Raleway-Bold;
+    }
+    .banner-date {
+        width: 50%;
+        text-align: end;
+        font-family: Raleway-Regular;
+    }
+    .banner-title {
+        width: 50%;
+    }
+    .banner-subtitle {
+        margin-top: 20px;
+    }
+    /********************end banner section************************/
 }
 
 @media (max-width:576px) {
@@ -767,6 +900,66 @@ footer .proud-affiliates-wrapper {
         max-width: 300px;
         margin: 15px auto;
     }
+    /****************search*****************/
+    .logo-wrapper img {
+        width: 50%;
+    }
+    .logo-text-wrapper h1 {
+        font-size: 21px;
+    }
+    .logo-text-wrapper h2 {
+        font-size: 11px;
+    }
+    .search-btn {
+        width: 65%;
+        height: 100%;
+        object-fit: contain;
+    }
+    /****************end search*****************/
+    /*********************key search**************************/
+    #respKeyCarousal {
+        position: relative;
+    }
+    #respKeyCarousal .owl-nav {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .res-keywords-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*********************end key search**************************/
+
+    /******************************card********************************/
+    .featured-card-row {
+        background-color: #F9F9F9;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .featured-card-row .col-6 {
+        background-color: #F9F9F9;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .featured-card {
+        background-color: white;
+        margin: 5px 0;
+    }
+    .featured-img-wrapped .featured-chip {
+        top: 0;
+        left: 0;
+    }
+    .card-content {
+        padding: 7px !important;
+    }
+    /******************************end card********************************/
 }
 @media (max-width:460px) {
     .how-it-works-text-wrapper {
@@ -776,10 +969,10 @@ footer .proud-affiliates-wrapper {
 
 }
 @media (max-width:440px) {
-    .featured-card {
+    /* .featured-card {
         max-width: 100%;
         margin: 15px auto;
-    }
+    } */
     .how-it-works-text-wrapper {
         width: 82%;
         padding-left: 80px;
@@ -799,4 +992,15 @@ footer .proud-affiliates-wrapper {
         left: -15%;
         top: -8px;
     }
+        /****************search*****************/
+        .logo-wrapper img {
+            width: 50%;
+        }
+        .logo-text-wrapper h1 {
+            font-size: 19px !important;
+        }
+        .logo-text-wrapper h2 {
+            font-size: 9.6px !important;
+        }
+        /****************end search*****************/
 }

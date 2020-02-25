@@ -101,6 +101,13 @@
     font-family: Roboto-Regular;
     font-size: 13px;
     line-height: 18px;
+
+}
+.heading-5-rr-1 {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
 }
 .heading-5-rb {
     font-family: Roboto-Bold;
@@ -125,25 +132,7 @@
     margin: 0;
 }
 /**********************************************inputs*********************************************************/
-#search {
-    width: 395px;
-    height: 40px;
-    border: 1px solid #E1E1E1;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 10px 16px;
-    transition: width 0.9s ease-in;
-}
-.search-btn {
-    width: 70px;
-    max-width: 70px;
-    height: 40px;
-    border: 1px solid #E1E1E1;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: #C41415;
-    color: white;
-}
+
 /********************************************end inputs*********************************************************/
 
 /******************************************bred-crumb-section*******************************/

@@ -31,7 +31,7 @@
     <section class="main-container background-grey">
         <div class="content-wrapper container">
             <div class="row logo-row">
-                <div class="col-5">
+                <div class="col-5 col-md-5 col-lg-5">
                     <div class="logo-wrapper">
                         <img src="./assets/img/web_logo.png" alt="logo">
                         <div class="logo-text-wrapper">
@@ -40,13 +40,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 p-0">
+                <div class="col-6 col-md-6 col-lg-5 p-0 search-center">
                     <form class="search-wrapper" action="#">
                         <input type="search" name="search" id="search" placeholder="search">
-                        <button class="search-btn" type="submit"> <img src="./assets/icons/search.png" alt="search"></button>
+                        <div class="search-btn-wrapper">
+                            <input class="search-btn" type="image" src="./assets/icons/search.png" alt="search"></input>
+                        </div>
                     </form>
                 </div>
-                <div class="col-2">
+                <div class="col-1 col-md-1 col-lg-2">
                     <div class="like-wrapper">
                         <img src="./assets/icons/like.png" alt="">
                     </div>
@@ -58,11 +60,11 @@
     <section class="main-container background-grey">
         <div class="container content-wrapper">
             <div class="row nav-row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 search-center">
                     <nav class="menu-bar-container">
                       <ul class="nav-list">
                           <li>
-                              <a>Categories</a> 
+                              <a class="first-level">Categories</a> 
                               <ul class="sub-menu categories active">
                                   <li>
                                       <a href="#">Baby Shoes</a>
@@ -115,14 +117,14 @@
                                 </li>
                               </ul>
                          </li>
-                          <li class="d-none d-md-block">
-                              <a href="">Top products</a>
+                          <li class="d-none d-lg-block">
+                              <a class="first-level" href="">Top products</a>
                          </li>
                           <li>
-                              <a href="">About us</a>
+                              <a class="first-level" href="">About us</a>
                          </li>
                           <li>
-                              <a href="">Content</a>
+                              <a class="first-level" href="">Content</a>
                          </li>
                       </ul>
                     </nav>
@@ -141,7 +143,7 @@
     <section class="main-container banner-section">
         <div class="banner-text-wrapper">
             <div class="banner-date heading-3-rwb">14/2/2020</div>
-            <h1 class="banner-title heading-1-rblack">TODAY’S PICKS</h1>
+            <h1 class="banner-title heading-1-rblack">today's picks</h1>
             <h2 class="banner-subtitle heading-2-rblack">make the good things even better bytelling us what you think about todays pick’s & help our engine to bring you the best items!
             </h2>
             <img class="banner-arrow" src="./assets/icons/banner-arrow.png" alt="">
@@ -166,8 +168,8 @@
                     </div>
                     <div class="slider-card-footer">
                         <div class="slider-card-btns-wrapper">
-                            <button class="slider-btn slider-btn-like heading-6-rr mr-2"> <img src="./assets/icons/like-heart.png" alt=""> MARKIT</button>
-                            <button class="slider-btn slider-btn-dislike heading-6-rr"><img src="./assets/icons/dislike.png" alt=""> NHAA...</button>                 
+                            <button class="slider-btn slider-btn-like heading-6-rr mr-2"> <img class="slider-img" src="./assets/icons/like-heart.png" alt=""> MARKIT</button>
+                            <button class="slider-btn slider-btn-dislike heading-6-rr"><img class="slider-img" src="./assets/icons/dislike.png" alt=""> NHAA...</button>                 
                         </div>
                     </div>
                 </div>
@@ -189,8 +191,8 @@
                     </div>
                     <div class="slider-card-footer">
                         <div class="slider-card-btns-wrapper">
-                            <button class="slider-btn slider-btn-like heading-6-rr mr-2"> <img src="./assets/icons/like-heart.png" alt=""> MARKIT</button>
-                            <button class="slider-btn slider-btn-dislike heading-6-rr"><img src="./assets/icons/dislike.png" alt=""> NHAA...</button>                 
+                            <button class="slider-btn slider-btn-like heading-6-rr mr-2"> <img class="slider-img" src="./assets/icons/like-heart.png" alt=""> MARKIT</button>
+                            <button class="slider-btn slider-btn-dislike heading-6-rr"><img class="slider-img" src="./assets/icons/dislike.png" alt=""> NHAA...</button>                 
                         </div>
                     </div>
                 </div>
@@ -198,7 +200,7 @@
         </div>
     </section>
     <section class="main-container background-grey2 most-search-keywords">
-        <div class="container content-wrapper">
+        <div class="container content-wrapper d-none d-md-block">
             <div class="row most-search-keywords-title">
                 <div class="col-12">
                     <h2 class="heading-2-rwb">Leading categories</h2>
@@ -225,6 +227,50 @@
                 </ul>
             </div>
         </div>
+        <div class="container content-wrapper d-block d-md-none">
+            <div id="respKeyCarousal" class="res-keywords-row">
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/toys.png" alt="toys"> </div>
+                        <div class="text-item heading-5-rr-1">Toys
+                            & Games</div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/clothing.png" alt="clothing"> </div>
+                        <div class="text-item heading-5-rr-1">Baby Boy’s 
+                            Clothing</div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/toddier-toys.png" alt="toddier"> </div>
+                        <div class="text-item heading-5-rr-1">Baby & 
+                            Toddler Toys
+                            </div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/feeding-toys.png" alt="feeding"> </div>
+                        <div class="text-item heading-5-rr-1">Feeding
+                            Toddler Toys
+                            </div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/clothing.png" alt="clothing"> </div>
+                        <div class="text-item heading-5-rr-1">Baby Boy’s 
+                            Clothing</div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/toddier-toys.png" alt="toddier"> </div>
+                        <div class="text-item heading-5-rr-1">Baby & 
+                            Toddler Toys
+                            </div>
+                    </div>
+                    <div class="res-keywords-items">
+                        <div class="img-item mb-3"><img src="./assets/icons/feeding-toys.png" alt="feeding"> </div>
+                        <div class="text-item heading-5-rr-1">Feeding
+                            Toddler Toys
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="main-container background-grey featured-products">
         <div class="container content-wrapper">
@@ -234,9 +280,9 @@
             <div class="row featured-tabs-row">
                 <div class="col-12">
                     <div class="featured-tabs-wrapper">
-                        <div class="featured-tab">Top rated</div>
+                        <div class="featured-tab active">Top rated</div>
                         <div class="featured-tab">Trending price</div>
-                        <div class="featured-tab active">New</div>
+                        <div class="featured-tab">New</div>
                         <div class="featured-tab">Top sellers</div>
                         <div class="featured-tab">Popular</div>
                         <div class="featured-tab">Community pick</div>
@@ -246,76 +292,15 @@
             </div>
             <div class="row featured-card-row top-rated-row active">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="./index2.html" class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-1.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                </a>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-2.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-3.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                     <div class="featured-card">
                         <div class="featured-card-header">
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-top">Top</div>
                                 <img class="featured-img" src="./assets/img/featered-4.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like"></div>
+                                    <div class="featured-dislike"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="featured-card-body">
@@ -326,6 +311,10 @@
                         <div class="featured-card-footer">
                             <div class="featured-price heading-3-rb">$329.99</div>
                             <div class="featured-origen heading-6-rr">Amazone.com</div>
+                        </div>
+                        <div class="respo-voiting-section d-flex d-md-none">
+                            <div class="featured-like active"></div>
+                            <div class="featured-dislike"></div>
                         </div>
                     </div>
                 </div>
@@ -335,19 +324,28 @@
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
                                 <img class="featured-img" src="./assets/img/featered-5.png" alt="">
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like active"></div>
+                                    <div class="featured-dislike"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
+                            </div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">Amazone.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
                                 <div class="featured-like active"></div>
                                 <div class="featured-dislike"></div>
                             </div>
                         </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -356,19 +354,28 @@
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-stars">334</div>
                                 <img class="featured-img" src="./assets/img/featered-6.png" alt="">
-                                <div class="featured-like "></div>
-                                <div class="featured-dislike active"></div>
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like "></div>
+                                    <div class="featured-dislike active"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
+                            </div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">Amazone.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
+                                <div class="featured-like active"></div>
+                                <div class="featured-dislike"></div>
                             </div>
                         </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -377,18 +384,26 @@
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-new">New</div>
                                 <img class="featured-img" src="./assets/img/featered-7.png" alt="">
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like active"></div>
+                                    <div class="featured-dislike"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
+                            </div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">Amazone.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
                                 <div class="featured-like active"></div>
-                                <div class="featured-dislike "></div>
+                                <div class="featured-dislike"></div>
                             </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
                         </div>
                     </div>
                 </div>
@@ -398,18 +413,26 @@
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-top">Top</div>
                                 <img class="featured-img" src="./assets/img/featered-8.png" alt="">
-                                <div class="featured-like"></div>
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like"></div>
+                                    <div class="featured-dislike"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
+                            </div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">Amazone.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
+                                <div class="featured-like active"></div>
                                 <div class="featured-dislike"></div>
                             </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
                         </div>
                     </div>
                 </div>
@@ -419,60 +442,26 @@
                             <div class="featured-img-wrapped">
                                 <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
                                 <img class="featured-img" src="./assets/img/featered-9.png" alt="">
+                                <div class="d-none d-sm-block">
+                                    <div class="featured-like active"></div>
+                                    <div class="featured-dislike"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
+                            </div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">Amazone.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
                                 <div class="featured-like active"></div>
                                 <div class="featured-dislike"></div>
                             </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-10.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">1000</div>
-                                <img class="featured-img" src="./assets/img/featered-11.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
                         </div>
                     </div>
                 </div>
@@ -489,87 +478,26 @@
 
                             </div>
                         </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                        <div class="card-content">
+                            <div class="featured-card-body">
+                                <div class="featured-title">
+                                    <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">last.com</div>
-                        </div>
-                        <div class="respo-voiting-section d-flex d-md-none">
-                            <div class="featured-like active"></div>
-                            <div class="featured-dislike"></div>
+                            <div class="featured-card-footer">
+                                <div class="featured-price heading-3-rb">$329.99</div>
+                                <div class="featured-origen heading-6-rr">last.com</div>
+                            </div>
+                            <div class="respo-voiting-section d-flex d-md-none">
+                                <div class="featured-like active"></div>
+                                <div class="featured-dislike"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row featured-card-row trending-price-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-9.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-10.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">1000</div>
-                                <img class="featured-img" src="./assets/img/featered-11.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+
                     <div class="featured-card">
                         <div class="featured-card-header">
                             <div class="featured-img-wrapped">
@@ -589,668 +517,19 @@
                             <div class="featured-origen heading-6-rr">Amazone.com</div>
                         </div>
                     </div>
-                </div>
+
             </div>
             <div class="row featured-card-row new-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-1.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-2.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-3.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-4.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-5.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-6.png" alt="">
-                                <div class="featured-like "></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="row featured-card-row top-sellers-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-4.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-5.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-6.png" alt="">
-                                <div class="featured-like "></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-7.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike "></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-8.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-9.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="row featured-card-row popular-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-6.png" alt="">
-                                <div class="featured-like "></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-7.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike "></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-8.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-9.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-10.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">1000</div>
-                                <img class="featured-img" src="./assets/img/featered-11.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-12.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
            </div>
             <div class="row featured-card-row community-pick-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-3.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-4.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-5.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">334</div>
-                                <img class="featured-img" src="./assets/img/featered-6.png" alt="">
-                                <div class="featured-like "></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-7.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike "></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-8.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-9.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-10.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-stars">1000</div>
-                                <img class="featured-img" src="./assets/img/featered-11.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-rating ">-15%</div>
-                                <img class="featured-img" src="./assets/img/featered-12.png" alt="">
-                                <div class="featured-like active"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
            </div>
            <div class="row featured-card-row best-value-row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-new">New</div>
-                                <img class="featured-img" src="./assets/img/featered-3.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike active"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <div class="featured-card">
-                        <div class="featured-card-header">
-                            <div class="featured-img-wrapped">
-                                <div class="heading-6-rr featured-chip featured-top">Top</div>
-                                <img class="featured-img" src="./assets/img/featered-4.png" alt="">
-                                <div class="featured-like"></div>
-                                <div class="featured-dislike"></div>
-                            </div>
-                        </div>
-                        <div class="featured-card-body">
-                            <div class="featured-title">
-                                <h4 class="heading-5-rr">Hudson Baby Baby Girls’ Beanie & Mittens Set</h4>
-                            </div>
-                        </div>
-                        <div class="featured-card-footer">
-                            <div class="featured-price heading-3-rb">$329.99</div>
-                            <div class="featured-origen heading-6-rr">Amazone.com</div>
-                        </div>
-                    </div>
-                </div>
            </div>
     </section>
     <section class="main-container how-it-works">
