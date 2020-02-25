@@ -400,16 +400,16 @@ background-position: center;
     cursor: pointer;
 
 }
-.featured-img-wrapped .featured-dislike {
+.featured-img-wrapped .featured-like {
     position: absolute;
     bottom: 3px;
-    right: 3px;
+    right: 24px;
     z-index: 10;
     width: 18px;
     height: 18px;
     border: none;
     border-radius: 3px;
-    background-image: url(../icons/empty-dislike.png);
+    background-image: url(../icons/empty-like.png);
     background-repeat: no-repeat;
     background-position: 50% 63%;
     background-color: white;
@@ -429,6 +429,32 @@ background-position: center;
     background-repeat: no-repeat;
     background-position: 50% 63%;
     background-color: #AD160F;
+    box-shadow: 0px 1px 3px #30353a;
+    cursor: pointer;
+}
+.respo-voiting-section .featured-like.active {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    background-image: url(../icons/like-big.png);
+    background-repeat: no-repeat;
+    background-position: 50% 63%;
+    background-color: #00A51E;
+    box-shadow: 0px 1px 3px #30353a;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.respo-voiting-section .featured-dislike {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    background-image: url(../icons/dislike-b.png);
+    background-repeat: no-repeat;
+    background-position: 50% 63%;
+    background-color: white;
     box-shadow: 0px 1px 3px #30353a;
     cursor: pointer;
 }
