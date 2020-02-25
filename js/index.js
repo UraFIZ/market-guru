@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    getNewTab(".featured-tab",".featured-products .content-wrapper", ".featured-card-row")
+    getInitiationOwlCarousalForGoodsTinder("#slide-goods-tinder");
+    getNewTab(".featured-tab",".featured-products .content-wrapper", ".featured-card-row");
     if( $(window).width() <= 768 && $(window).width() >= 600) {
         getExtendSearchInputForTab();
     }else if($(window).width() < 599) {
@@ -103,5 +104,19 @@ function getInitiationOwlCarousalNotResp(id) {
         margin: 0,
         rewind: false,
         items: 4
+    })
+}
+
+function getInitiationOwlCarousalForGoodsTinder(id) {
+    $(id).addClass("owl-carousel");
+    $(id).owlCarousel({
+        loop: true,
+        autoplay: false,
+        nav: false,
+        dots: false,
+        center: false,
+        margin: 10,
+        rewind: false,
+        items: 3
     })
 }

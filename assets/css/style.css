@@ -203,8 +203,13 @@ h1 {
 }
 .banner-text-wrapper {
     position: relative;
-    max-width: 450px;
+    flex: 0 0 40%;
+    max-width: 40%;
     
+}
+.banner-slider-wrapper {
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 .banner-arrow {
     position: absolute;
@@ -229,12 +234,12 @@ h1 {
     align-items: center;
 
 }
-.slider-cards-wrapper > *:not(:last-child) {
+/* .slider-cards-wrapper > *:not(:last-child) {
     margin-right: 30px;
-}
-.slider-card.active {
+} */
+/* .slider-card.active {
     zoom: 1;
-}
+} */
 .slider-card {
     display: flex;
     flex-direction: column;
@@ -243,7 +248,7 @@ h1 {
     height: 100%;
     padding: 13px;
     background-color: #fff;
-    zoom: 0.9;
+    zoom: 1;
 
 }
 .slider-card-header {
