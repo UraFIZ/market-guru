@@ -93,9 +93,6 @@
     .sub-menu {
         display: none;
     }
-    .nav-list li:hover > .sub-menu{
-            display: block;
-    }
 }
 @media (max-width: 768px) {
     .menu-bar-item:not(:last-child) {
@@ -121,12 +118,18 @@
         overflow-y: scroll;
         width: 100%;
     }
-    .nav-list li:hover > .sub-menu {
+    .sub-menu.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+        display: block; 
+    }
+    /* .nav-list li:hover > .sub-menu {
         opacity: 1;
         visibility: visible;
         max-height: initial;
         display: block;
-    }
+    } */
     .sub-menu {
         border-left: 3px solid #A81815;
         position: initial;

@@ -832,7 +832,7 @@ footer .proud-affiliates-wrapper {
 }
                                          /**************************************end source-links******************************************/
                                          /**************************************Tag-accordion******************************************/
-.filtering-menu-container .checkbox, .browse-brand-menu-container .checkbox {
+.filtering-menu-container .checkbox, .browse-brand-menu-container .checkbox,  .clear-filter .checkbox{
 	position: absolute;
 	left: -9999px;
 }
@@ -1100,6 +1100,132 @@ footer .proud-affiliates-wrapper {
             width: auto !important;
         }
         /*****************end respKeyCarousal*********************************/
+        /*********************menu********************************************/
+       .nav-row .search-center {
+            box-shadow: 1px 10px 13px -7px black;
+            margin-bottom: 10px;
+        }
+        .nav-list {
+            justify-content: space-between;
+            margin-bottom: 0 !important;
+        }
+        .menu-bar-wrapper, nav {
+            width: 100%;
+        }
+        /*********************end menu********************************************/
+        /******************************filter-section*****************************/
+        .sorting-col {
+            display: flex;
+            justify-content: flex-start;
+            background-color: white;
+        }
+        .sorting-row {
+            background-color: #e9ecef;
+        }
+        #dropdownMenuButton {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .filter-col {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: white;
+            border-left: 1px solid gray;
+        }
+        .filter-wrapper {
+            width: 100%;
+            max-width: 100%;
+             display: flex;
+             cursor: pointer;
+             
+        }
+        .filter-text {
+            color: #646464;
+        }
+         .sorting-col .dropdown {
+            border: none;
+            max-width: 100%;
+        }
+        /******************************end filter-section*****************************/
+        /**************************menu aside**********************************/
+        .detail-content-wrapper {
+            padding-right: 5px !important;
+            padding-left: 5px !important;
+        }
+        .card-detail-row {
+            background-color: #F9F9F9;
+            padding-right: 5px !important;
+            padding-left: 5px !important;
+            margin-left: 0 !important;
+        }
+        .card-detail-row .col-6 {
+            background-color: #F9F9F9;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        /**************************end menu aside**********************************/
+        .filtering-menu-container {
+            /* position: relative; */
+        }
+        .applied-filters-panel {
+            display: none;
+            position: fixed;
+            bottom: 0%;
+            right: 0;
+            width: 100%;
+            min-height: 60px;
+            z-index: 30;
+        }
+        .applied-filters-panel.active {
+            display: flex;
+        }
+        .apply-filter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 42%;
+            color: white;
+            background-color: #00A31D;
+        }
+        .clear-filter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 58%;
+            color: black;
+            background-color: white;
+        }
+        .clear-filter form {
+            padding: 1.25rem;
+            width: 100%;
+        }
+        .aside-menu-container {
+            display: none;
+            position: absolute;
+            z-index: 20;
+            right: -39px;
+            animation: movedRight .5s easy-in;
+        }
+        .aside-menu-container.active {
+            display: block;
+            transform: translateX(0);
+            animation: movedRight .5s easy-in;
+        }
+
+}
+@keyframes movedRight {
+    0% {
+        transform: translateX(150%);
+    }
+    50% {
+        transform: translateX(75%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 @media (max-width:460px) {
     .banner-slider-wrapper {

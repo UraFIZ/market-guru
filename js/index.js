@@ -1,8 +1,14 @@
 $(document).ready(function(){
-    getInitiationOwlCarousalForTinder("#tinder-carousel");
-    getInitiationOwlCarousalNotResp("#respKeyCarousal");
+    if($("#tinder-carousel").length > 0) {
+        getInitiationOwlCarousalForTinder("#tinder-carousel");
+    }
+    if($("#respKeyCarousal").length > 0) {
+        getInitiationOwlCarousalNotResp("#respKeyCarousal");
+    }
+    
     //working with lazy loading
     // getLoadingCardResponsive()
+    getClickedCardsInTabs(".card-detail-row .featured-card");
     getClickedCardsInTabs();
     getNewTab(".featured-tab",".featured-products .content-wrapper", ".featured-card-row", getClickedCardsInTabs)
     if( $(window).width() <= 768 && $(window).width() >= 600) {
@@ -11,7 +17,9 @@ $(document).ready(function(){
         getShowSearchInput();
     }
     if($(document).width() <= 1024) {
-        getInitiationOwlCarousalInOneLine("#how-it-works-row")
+        if($("#how-it-works-row").length > 0) {
+            getInitiationOwlCarousalInOneLine("#how-it-works-row")
+        }
     }
 })
 
@@ -213,6 +221,7 @@ function isBtnShowMoreDisplayed(data =[]) {
 }
 function getClickedCardsInTabs(data=[]) { 
     var workingData = checkIsDataAvailable(data);
+
     isBtnShowMoreDisplayed(workingData)
     var likeBtn, dislikeBtn;
     if($(window).width() >= 768) {
@@ -303,3 +312,85 @@ function getLoadingCardResponsive(data) {
     }
 
 }
+
+// getCheckedItemInTagForm();
+ getExtendedSideFilterMenu();
+function getExtendedSideFilterMenu() {
+    $(".filter-wrapper").on("click", function(){
+        $(".applied-filters-panel").toggleClass("active");
+        $(".aside-menu-container").toggleClass("active");
+        clearFilter();
+        // var clearFormItems = $(".clear-filter form").children();
+
+    })
+}
+
+// function getCheckedItemInTagForm() {
+//     var currentCheckboxes = $('.aside-menu-container .checkbox');
+//     $(currentCheckboxes).each(function(inx, item){
+//         $(item).click(function(){
+//             var checkedItem = $(item).attr("id");
+//             getImplementedCheckedCheckboxesInFilterPanel(checkedItem);
+//         })
+//     })
+// }
+
+// function getImplementedCheckedCheckboxesInFilterPanel(id) {
+//     var clearFormItems = $(".clear-filter form").children();
+//     $(clearFormItems).each(function(inx, item){
+//         var checkbox = $(item).find(".checkbox");
+//         if($(checkbox).attr("id") == id) {
+//             $(item).show();
+//             $(checkbox).attr("checked", true)
+//         }
+//     })
+// }
+function clearFilter() {
+    $(".clear-filter").click(function(){
+        var currentCheckboxes = $('.aside-menu-container .checkbox');
+        $(currentCheckboxes).each(function(inx, item){
+              $(item).prop("checked", false)
+       })
+    })
+
+}
+// function submitAppliedForm() (
+    
+// )
+getMobileNestedMenu();
+function getMobileNestedMenu() {
+    $(".sub-menu").removeClass("active")
+    $("#nested-menu").click(function (e) {
+        $(".sub-menu.categories").show();
+        e.preventDefault();
+        var subMenu = $(this).siblings(".sub-menu");
+       if($(subMenu).length > 0) {
+           $(subMenu).toggleClass("active");
+           var subMenuChildren = $(subMenu).children();
+           if($(subMenuChildren).length > 0) {
+               $(subMenuChildren).each(function(inx, item) {
+                   if($(item).find('ul').length > 0) {
+                       $(item).click(function(e){
+                        e.preventDefault();
+                        var subSubMenu = $(item).children('ul');
+                        $(subSubMenu).toggleClass("active");
+                       })
+                   }
+               })
+           }
+       }
+    })
+
+}
+function getClosedDropDownMenu() {
+    if ($(window).width() <= 992) {
+        $(extendedMenu).show();
+        var extendedMenu = $(".sub-menu.categories");
+        $(document).on("click", function (e) {
+            if (!$("#nested-menu").is(e.target) && !$(".sub-menu").is(e.target) && $(extendedMenu).has(e.target).length === 0) {
+                $(extendedMenu).hide();
+            }
+        })
+    }
+}
+getClosedDropDownMenu()
